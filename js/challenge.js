@@ -25,9 +25,9 @@ const questions = {
 
     "Maureen is keeping track of the mean of her quiz scores this semester. If Maureen scores an 11 on the next quiz, her mean will increase by 1. If she scores an 11 on each of the next three quizzes, her mean will increase by 2. What is the mean of her quiz scores currently?" : ["4", "5", "6", "7", "8", "D"], 
 
-    "Mrs. Jones is pouring orange juice into four identical glasses for her four sons. She fills the first three glasses completely but runs out of juice when the fourth glass is only \frac{1}{3} full. What fraction of a glass must Mrs. Jones pour from each of the first three glasses into the fourth glass so that all four glasses will have the same amount of juice?" : ["1/12", "1/4", "1/6", "1/8", "2/9", "C"], 
+    "Mrs. Jones is pouring orange juice into four identical glasses for her four sons. She fills the first three glasses completely but runs out of juice when the fourth glass is only 1/3 full. What fraction of a glass must Mrs. Jones pour from each of the first three glasses into the fourth glass so that all four glasses will have the same amount of juice?" : ["1/12", "1/4", "1/6", "1/8", "2/9", "C"], 
 
-    "Carlos went to a sports store to buy running shoes. Running shoes were on sale, with prices reduced by 20\%on every pair of shoes. Carlos also knew that he had to pay a 7.5\% sales tax on the discounted price. He had 43 dollars. What is the original (before discount) price of the most expensive shoes he could afford to buy?" : ["46", "50", "48", "47", "49", "B"], 
+    "Carlos went to a sports store to buy running shoes. Running shoes were on sale, with prices reduced by 20% on every pair of shoes. Carlos also knew that he had to pay a 7.5% sales tax on the discounted price. He had 43 dollars. What is the original (before discount) price of the most expensive shoes he could afford to buy?" : ["46", "50", "48", "47", "49", "B"], 
 
     "A 3-4-5 right triangle is inscribed in circle A, and a 5-12-13 right triangle is inscribed in circle B. What is the ratio of the area of circle A to the area of circle B?" : ["9/25", "1/9", "1/5", "25/169", "4/25", "D"], 
 
@@ -37,7 +37,7 @@ const questions = {
 
     "The numbers 16 and 25 are a pair of consecutive positive squares whose difference is 9. How many pairs of consecutive positive perfect squares have a difference of less than or equal to 2023?" : ["674", "1011", "1010", "2019", "2017", "B"], 
 
-    "You are playing a game. A 2 \times 1 rectangle covers two adjacent squares (oriented either horizontally or vertically) of a 3 \times 3 grid of squares, but you are not told which two squares are covered. Your goal is to find at least one square that is covered by the rectangle. A 'turn' consists of you guessing a square, after which you are told whether that square is covered by the hidden rectangle. What is the minimum number of turns you need to ensure that at least one of your guessed squares is covered by the rectangle?" : ["3", "5", "4", "8", "6", "C"], 
+    "You are playing a game. A 2 times 1 rectangle covers two adjacent squares (oriented either horizontally or vertically) of a 3 times 3 grid of squares, but you are not told which two squares are covered. Your goal is to find at least one square that is covered by the rectangle. A 'turn' consists of you guessing a square, after which you are told whether that square is covered by the hidden rectangle. What is the minimum number of turns you need to ensure that at least one of your guessed squares is covered by the rectangle?" : ["3", "5", "4", "8", "6", "C"], 
 
     "Mike cycled 15 laps in 57 minutes. Assume he cycled at a constant speed throughout. Approximately how many laps did he complete in the first 27 minutes?" : ["5", "7", "9", "11", "13", "B"], 
 
@@ -51,17 +51,15 @@ const questions = {
 
     "A data set consists of 6 (not distinct) positive integers: 1, 7, 5, 2, 5, and X. The average (arithmetic mean) of the 6 numbers equals a value in the data set. What is the sum of all possible values of X?" : ["10", "26", "32", "36", "40", "D"], 
 
-    "On Halloween 31 children walked into the principal's office asking for candy. They can be classified into three types: Some always lie; some always tell the truth; and some alternately lie and tell the truth. The alternaters arbitrarily choose their first response, either a lie or the truth, but each subsequent statement has the opposite truth value from its predecessor. The principal asked everyone the same three questions in this order. Are you a truth-teller? The principal gave a piece of candy to each of the 22 children who answered yes. Are you an alternater? The principal gave a piece of candy to each of the 15 children who answered yes. Are you a liar? The principal gave a piece of candy to each of the 9 children who answered yes. How many pieces of candy in all did the principal give to the children who always tell the truth?" : ["7", "12", "21", "27", "31", "A"], 
-
     "How many three-digit positive integers have an odd number of even digits?" : ["150", "250", "350", "450", "550", "D"], 
 
-    "How many of the first ten numbers of the sequence 121, 11211, 1112111, \ldots are prime numbers?" : ["0", "1", "2", "3", "4", "A"], 
+    "How many of the first ten numbers of the sequence 121, 11211, 1112111, ... are prime numbers?" : ["0", "1", "2", "3", "4", "A"], 
 
-    "For how many values of the constant k will the polynomial x^{2}+kx+36 have two distinct integer roots?" : ["6", "8", "9", "14", "16", "B"], 
+    "For how many values of the constant k will the polynomial x^2+kx+36 have two distinct integer roots?" : ["6", "8", "9", "14", "16", "B"], 
 
     "Camila writes down five positive integers. The unique mode of these integers is 2 greater than their median, and the median is 2 greater than their arithmetic mean. What is the least possible value for the mode?" : ["5", "7", "9", "11", "13", "D"], 
 
-    "A pair of fair 6-sided dice is rolled n times. What is the least value of n such that the probability that the sum of the numbers face up on a roll equals 7 at least once is greater than \frac{1}{2}?" : ["2", "3", "4", "5", "6", "C"]
+    "A pair of fair 6-sided dice is rolled n times. What is the least value of n such that the probability that the sum of the numbers face up on a roll equals 7 at least once is greater than 1/2?" : ["2", "3", "4", "5", "6", "C"]
 
 };
 
