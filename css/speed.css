@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:root {
+    --primary-color:#5888A6;
+    --dark-color: #32628C;
+    --black-color: #00001a;
+    --light-color: #ADC8D9;
+    --white-color: #EBF0F2;   
+    --gray-color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px 15px 20px;
+}
+
+.logo-image {
+    width: 30%;
+}
+
+.main-menu {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 550px;
+} 
+
+.main-menu a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.main-menu a:hover {
+    transition-duration: 0.3s;
+    color: var(--primary-color)
+}
+
+/* Stats */
+.full-stats{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px 0px;
+}
+
+.start{
+    border: 2px solid var(--black-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--gray-color);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px var(--black-color);
+    width: 20%;
+    height: 70px;
+}
+
+.start:hover{
+    transition-duration: 0.6s;
+    background-color: var(--primary-color);
+}
+
+.stats{
+    border: 2px solid var(--black-color);
+    border-radius: 20px;
+    width: 70%;
+    height: 60px;
+    background-color: var(--light-color);
+    display:flex;
+    justify-content: space-around;
+    border: 2px solid var(--black-color);
+    box-shadow: 3px 3px 3px var(--black-color);
+}
+
+.stats div {
+    font-size: 0.8rem;
+    font-weight: normal;
+    align-self: center;
+}
+
+/* Question-Box */
+.question-box {
+    margin: 60px auto 60px;
+    height: 450px;
+    width: 300px;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 150px;
+    float: right;
+    margin-right: 20px;
+}
+
+.first-value {
+    width: 100%;
+    height: 50%;
+    font-size: 7rem;
+    text-align: right;
+}
+
+.second-value {
+    width: 100%;
+    height: 50%;
+    font-size: 7rem;
+    text-align: right;
+}
+
+.operation {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 6rem;
+}
+
+.operation-line {
+    display: none;
+    width: 60%;
+    margin: 30px auto 0px;
+    border: 2px solid black;
+}
+
+.input-form {
+    display: none;
+    margin: 20px 70px 0px;
+    font-size: 6rem;
+    width: 200px;
+    direction: rtl;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.popup-content {
+    border-radius: 20px;
+    background-color: var(--white-color);
+    height: auto;
+    margin: 300px auto;
+    padding: 20px;
+    border: 3px solid var(--black-color);
+    width: 70%;
+    font-weight: bold;
+}
+
+.popup-text {
+    font-size: 2rem;
+    margin: 20px;
+    color: var(--black-color);
+}
+
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: normal;
+    border: 3px solid var(--black-color);
+    background: var(--light-color);
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: 3px 3px 3px var(--black-color);
+
+}
+.show {
+    display: block;
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+    .main-menu{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .stats div{
+        font-size: 1.5rem;
+    }
+    .full-stats{
+        width: 700px;
+        margin: 40px auto 0px;
+    }
+    .main-menu a {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .main-menu{
+        width: 30%;
+    }
+    .full-stats{
+        width: 900px;
+        margin: 60px auto 0px;
+    }
+    .stats{
+        height: 80px;
+    }
+    .start{
+        height: 100px;
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+}
