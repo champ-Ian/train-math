@@ -117,18 +117,19 @@ body {
     width: 100%;
     height: auto;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 3.5vw;
 }
 
 .choices {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
 .choices div {
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .bigA, .bigB, .bigC, .bigD, .bigE{
@@ -137,11 +138,8 @@ body {
 }
 
 .a-choice, .b-choice, .c-choice, .d-choice, .e-choice{
-    width: 30px;
-}
-
-.a-choice, .b-choice, .c-choice, .d-choice, .e-choice{
-    font-size: 1rem;
+    font-size: 0.6rem;
+    text-align: left;
 }
 
 /* Answer */
@@ -185,8 +183,8 @@ body {
     border-radius: 20px;
     background-color: var(--white-color);
     height: auto;
-    margin: 20% auto;
     padding: 20px;
+    margin: 20% auto;
     border: 3px solid var(--black-color);
     width: 70%;
     font-weight: bold;
@@ -229,6 +227,13 @@ body {
     .question{
         font-size: 1.1rem;
     }
+    .bigA, .bigB, .bigC, .bigD, .bigE{
+        font-size: 1.2rem;
+    }
+    
+    .a-choice, .b-choice, .c-choice, .d-choice, .e-choice{
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -254,6 +259,13 @@ body {
     }
     .main-menu a {
         font-size: 1.3rem;
+    }
+    .bigA, .bigB, .bigC, .bigD, .bigE{
+        font-size: 1.3rem;
+    }
+    
+    .a-choice, .b-choice, .c-choice, .d-choice, .e-choice{
+        font-size: 1rem;
     }
 }
 
@@ -285,6 +297,13 @@ body {
         width: 700px;
         margin-top: 30px;
     }
+    .bigA, .bigB, .bigC, .bigD, .bigE{
+        font-size: 1.5rem;
+    }
+    
+    .a-choice, .b-choice, .c-choice, .d-choice, .e-choice{
+        font-size: 1rem;
+    }
 }
 
 
@@ -294,5 +313,12 @@ body {
         margin: 40px auto 0px;
         width: 50%;
         height: 420px;
+    }
+    .bigA, .bigB, .bigC, .bigD, .bigE{
+        font-size: 1.6rem;
+    }
+    
+    .a-choice, .b-choice, .c-choice, .d-choice, .e-choice{
+        font-size: 1rem;
     }
 }
