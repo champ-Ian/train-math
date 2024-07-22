@@ -185,7 +185,8 @@ body {
 }
 
 .end-text {
-    font-size: 2rem;
+    font-weight: normal;
+    font-size: 1.5rem;
     margin: 20px;
     color: var(--black-color);
 }
