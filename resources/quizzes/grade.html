@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practice math problems in a fun way for free! Helps train for
+    contests like Amc 10 and Mathcounts and also increase your computational skills!"/>
+    <title>Train Math</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\grade.css">
+    <link rel="icon" href="../../img/simplified_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="loadQuestion()"> 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../img/simplified_logo-removebg-preview.png" 
+                alt="logo" class="logo-image">
+            </a>
+        </div>
+        <div class="main-menu">
+            <a href="../../challenge.html">Challenge</a>
+            <a href="../../speed.html">Speed</a>
+            <a href="../index.html">Resources</a>
+        </div>
+    </nav>
+
+    <!-- Resouces-Navbar -->
+    <nav class="resource-navbar">
+        <a href="../index.html">Home</a>
+        <a href="../formula.html">Formulas</a>
+        <a href="../glossary.html">Glossary</a>
+        <a href="../calculator.html">Calculator</a>
+        <a href="index.html">Quizzes</a>
+    </nav>
+
+    <!-- Back -->
+    <section class="back">
+        <a href="index.html" class="backButton">Back</a>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="progress">Progress: 0/14</div>
+    </section>
+
+    <!-- Question -->
+    <section class="question">
+        <div class="question-text"></div>
+    </section>
+
+    <!-- Answer -->
+    <section class="answer">
+        <div class="container">
+            <div class="choice1" onclick="answer(1)"></div>
+            <div class="choice2" onclick="answer(2)"></div>
+            <div class="choice3" onclick="answer(3)"></div>
+            <div class="choice4" onclick="answer(4)"></div>
+        </div>
+    </section>
+    
+    <!-- end -->
+    <div id="myEnd" class="end">
+        <div class="end-content">
+            <h1 class="end-text"></h1>
+            <button class="closeEnd" type="button" onclick="closeEnd()">
+                Retry
+            </button>
+        </div>
+    </div>
+
+    <script src="js/grade.js"></script>
+</body>
+</html>

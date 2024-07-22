@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--light-color);
+}
+
+:root {
+    --primary-color:#5888A6;
+    --dark-color: #32628C;
+    --black-color: #00001a;
+    --light-color: #ADC8D9;
+    --white-color: #EBF0F2;   
+    --gray-color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px 15px 20px;
+}
+
+.logo-image {
+    width: 30%;
+}
+
+.main-menu {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 550px;
+} 
+
+.main-menu a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.main-menu a:hover {
+    transition-duration: 0.3s;
+    color: var(--primary-color)
+}
+
+/* Resources-Navbar */
+.resource-navbar {
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 20px 20px;
+    overflow: hidden;
+}
+
+.resource-navbar a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.resource-navbar a:hover {
+    transition-duration: 0.8s;
+    color: var(--primary-color);
+}
+
+/* Quizzes */
+.quizzes{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    background: var(--gray-color);
+    border: 2px solid var(--black-color);
+    width: 80%;
+    margin: 30px auto 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.heading{
+    margin: 10px 20px 10px;
+    background: var(--primary-color);
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.heading:hover{
+    transition-duration: 0.6s;
+    background: var(--dark-color);
+}
+
+.image{
+    width: 100%;
+}
+
+.text{
+    font-size: 1rem;
+    margin: 0px 30px 20px;
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+    .main-menu{
+        width: 50%;
+    }
+    .resource-navbar a {
+        font-size: 1rem;
+    } 
+    .card{
+        width: 60%;
+    }
+    .heading{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .resource-navbar a {
+        font-size: 1.2rem;
+    }
+    .card{
+        width: 40%;
+    }
+    .main-menu a {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .main-menu{
+        width: 30%;
+    }
+    .quizzes{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+}

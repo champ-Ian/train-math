@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practice math problems in a fun way for free! Helps train for
+    contests like Amc 10 and Mathcounts and also increase your computational skills!"/>
+    <title>Train Math</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\formula.css">
+    <link rel="icon" href="../img/simplified_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/simplified_logo-removebg-preview.png" 
+                alt="logo" class="logo-image">
+            </a>
+        </div>
+        <div class="main-menu">
+            <a href="../challenge.html">Challenge</a>
+            <a href="../speed.html">Speed</a>
+            <a href="index.html">Resources</a>
+        </div>
+    </nav>
+
+    <!-- Resouces-Navbar -->
+    <nav class="resource-navbar">
+        <a href="index.html">Home</a>
+        <a href="formula.html">Formulas</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="quizzes/index.html">Quizzes</a>
+    </nav>
+
+    <!-- Geometry -->
+    <section class="geometry">
+        <div class="geometry-head">
+            <h1 class="geometry-header">Geometry</h1>
+            <button class="geometryButton" type="button" onclick="expand('geometry')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="geometry-sections" style="display: none">
+            <div class="1 1-section">
+                <h4 class="1.1-head">Area of a Triangle</h4>
+                <img src="img/1.1.png" alt="image">
+                <div class="1.1">Where A is the area, b is the base, and h is the height. In the second equation, r is the inradius
+                    and s is the semiperimeter (which is half the perimeter). In the third equation, θ is the angle
+                    between two sides a, b of the triangle. In the final equation, a, b, c are the sides of the triangle with
+                    circumradius R.</div>
+            </div>
+
+            <div class="1.2-section">
+                <h4 class="1.2-head">Area of a Square (and kite/rhombus)</h4>
+                <img src="img/1.2.png" alt="image">
+                <div class="1.2">Where A is the area, b is the base, h is the height, s is the side length, and d1,2 is the length
+                    of a diagonal. The prior equation only applies to squares. The latter formula applied to any
+                    quadrilateral with perpendicular diagonals (such as kites and rhombi).
+                    </div>
+            </div>
+
+            <div class="1.3-section">
+                <h4 class="1.3-head">Area of a Rectangle</h4>
+                <img src="img/1.3.png" alt="image">
+                <div class="1.3">Where A is the area, b is the base, and h is the height.
+                </div>
+            </div>
+
+            <div class="1.4-section">
+                <h4 class="1.4-head">Area of a Trapezoid</h4>
+                <img src="img/1.4.png" alt="image">
+                <div class="1.4">Where A is the area, b1 and b2 are bases, and h is the height</div>
+            </div>
+
+            <div class="1.5-section">
+                <h4 class="1.5-head">Area of a Regular Hexagon</h4>
+                <img src="img/1.5.png" alt="image">
+                <div class="1.5">Where A is the area and s is the side length. Deriving this by breaking the hexagon into six
+                    equilateral triangles and then 12 right triangles is a useful exercise</div>
+            </div>
+
+            <div class="1.6-section">
+                <h4 class="1.6-head"> Area of a Regular Polygon</h4>
+                <img src="img/1.6.png" alt="image">
+                <div class="1.6">Where A is the area, a is the apothem, p is the perimeter, n is the number of sides, and s is the
+                    side length.</div>
+            </div>
+
+            <div class="1.7-section">
+                <h4 class="1.7-head">Volume/Surface Area of a Cone</h4>
+                <img src="img/1.7.png" alt="image">
+                <div class="1.7">Where V is the volume, SA is the surface area, r is the radius of the circular base, h is the height,
+                    and l is the slant height.</div>
+            </div>
+
+            <div class="1.8-section">
+                <h4 class="1.8-head">Volume/Surface Area of a Sphere</h4>
+                <img src="img/1.8.png" alt="image">
+                <div class="1.8">Where V is the volume, SA is the surface area, and r is the radius of the sphere (which is radius
+                    of the central cross section/the base of the semisphere).</div>
+            </div>
+
+            <div class="1.9-section">
+                <h4 class="1.9-head">Volume/Surface Area of a Cube</h4>
+                <img src="img/1.9.png" alt="image">
+                <div class="1.9">Where V is the volume, SA is the surface area, and s is the length of a side.
+                </div>
+            </div>
+
+            <div class="1.10-section">
+                <h4 class="1.10-head">Volume/Surface Area of a Pyramid</h4>
+                <img src="img/1.10.png" alt="image">
+                <div class="1.10">Where V is the volume, SA is the surface area, b is the area of the base, h is the height, l is the
+                    slant height, and s is the length of a side of the base. Note that a pyramid can have a base of
+                    any polygon, but if none is specified, assume a square base. A pyramid with a triangular base is
+                    known as a tetrahedron.
+                    </div>
+            </div>
+
+            <div class="1.11-section">
+                <h4 class="1.11-head">Volume/Surface Area of a Cylinder</h4>
+                <img src="img/1.11.png" alt="image">
+                <div class="1.11">Where V is the volume, SA is the surface area, r is the radius of the circular base, and h is the
+                    height.</div>
+            </div>
+
+            <div class="1.12-section">
+                <h4 class="1.12-head">Volume/Surface Area of a Prism</h4>
+                <img src="img/1.12.png" alt="image">
+                <div class="1.12">Where V is the volume, SA is the surface area, l is the length, w is the width, and h is the height.</div>
+            </div>
+
+            <div class="1.13-section">
+                <h4 class="1.13-head">Pythagorean Theorem and Right Triangles</h4>
+                <img src="img/1.13a.png" alt="image">
+                <div class="1.13">Where c is the hypotenuse of a right triangle with legs a and b. Note that there are some “special”
+                    right triangles. These include right triangles with angle measures 45◦ − 90◦ − 45◦ and 30◦ −
+                    60◦ − 90◦
+                    . The prior type of right triangle has the property that if either leg (they are identical)
+                    has length x, the hypotenuse has length x
+                    √
+                    2. Similarly, the latter type of right triangle has the
+                    property that if the side opposite the 30◦ angle has length x, the side opposite the 60◦ angle has
+                    length x
+                    √
+                    3, and the side opposite the 90◦ angle has length 2x. You should also memorize some
+                    common Pythagorean triples (if a triangle has these side lengths, or these side lengths multiplied
+                    by some factor, it is a right triangle): 3 − 4 − 5, 5 − 12 − 13, 7 − 24 − 25, and 8 − 15 − 17.</div>
+                <img src="img/1.13b.png" alt="image">
+            </div>
+
+            <div class="1.14-section">
+                <h4 class="1.14-head">Distance Formula</h4>
+                <img src="img/1.14.png" alt="image">
+                <div class="1.14">Where (x1, y1) and are points a coordinate plane and d is the distance between them. This is
+                    essentially the Pythagorean Theorem restated for points on a plane.
+                    </div>
+            </div>
+
+            <div class="1.15-section">
+                <h4 class="1.15-head">Heron’s Formula</h4>
+                <img src="img/1.15.png" alt="image">
+                <div class="1.15">Where A is the area and s is the semiperimeter of the triangle with sides a, b, c.</div>
+            </div>
+
+            <div class="1.16-section">
+                <h4 class="1.16-head">Cyclic Quadrilaterals*</h4>
+                <div class="1.16">A quadrilateral is cyclic if and only if the quadrilateral can be inscribed in a circle. Here are some
+                    of the fundamental properties of cyclic quadrilaterals.
+                    </div>
+                <img src="img/1.16.png" alt="image">
+            </div>
+
+            <div class="1.17-section">
+                <h4 class="1.17-head">Ptolemy’s Theorem</h4>
+                <img src="img/1.17.png" alt="image">
+                <div class="1.17">Where ABCD is a cyclic quadrilateral with side lengths a, b, c, d and diagonals e, f (with a opposite
+                    b and c opposite d).</div>
+            </div>
+
+            <div class="1.18-section">
+                <h4 class="1.18-head">Brahmagupta’s Formula</h4>
+                <img src="img/1.18.png" alt="image">
+                <div class="1.18">Where K is the area and s is the semiperimeter of the quadrilateral with sides a, b, c, d. For this
+                    formula to work, the quadrilateral must be cyclic.</div>
+            </div>
+
+            <div class="1.19-section">
+                <h4 class="1.19-head">Power of a Point</h4>
+                <img src="img/1.19.png" alt="image">
+                <div class="1.19">This theorem states that in the leftmost diagram (two intersecting internal chords), AE · EC =
+                    DE · EB, in the middle diagram (a tangent and a secant that meet at a point) AB2
+                    = BC · CD,
+                    and in the last diagram (secants that intersect outside the circle) CB · CA = CD · CE.
+                    </div>
+            </div>
+
+            <div class="1.20-section">
+                <h4 class="1.20-head">Ceva’s Theorem</h4>
+                <img src="img/1.20.png" alt="image">
+                <div class="1.20">Ceva’s theorem states that in with points D, E, F on sides BC, AC, AB respectively, are concurrent
+                    if, and only if, BD
+                    DC ·
+                    CE
+                    EA ·
+                    AF
+                    F B = 1</div>
+            </div>
+
+            <div class="1.21-section">
+                <h4 class="1.21-head">Menelaus’ Theorem</h4>
+                <img src="img/1.21.png" alt="image">
+                <div class="1.21">This configuration shows up from time to time, though not often. The theorem states that given
+                    a configuration as shown below, BP · CQ · P C = QA · RB · AR</div>
+            </div>
+
+            <div class="1.22-section">
+                <h4 class="1.22-head">Arcs and Angles in a Circle</h4>
+                <div class="1.22">An arc is a portion of the circle’s circumference measured in degrees. The measure of an angle
+                    formed by the center of a circle and two point on the circumference is equal to the measure of the
+                    intercepted (subtended) arc. An angle formed by three points on the circumference of the circle is
+                    equal to 1
+                    2
+                    the measure of the subtended arc.
+                    </div>
+            </div>
+
+            <div class="1.23-section">
+                <h4 class="1.23-head">Angle Bisector Theorem</h4>
+                <img src="img/1.23.png" alt="image">
+                <div class="1.23">The Angle Bisector Theorem states that given 4ABC and angle bisector AD, where D is on side
+                    BC, then c
+                    m =
+                    b
+                    n
+                    . Likewise, the converse of this theorem holds as well</div>
+            </div>
+
+            <div class="1.24-section">
+                <h4 class="1.24-head"> Trigonometric Identities</h4>
+                <div class="1.24">Note that tan θ =
+                    sin θ
+                    cos θ
+                    and cot θ =
+                    cos θ
+                    sin θ
+                    . Also sec θ =
+                    1
+                    cos θ
+                    and csc θ =
+                    1
+                    sin θ
+                    . Therefore, the
+                    identities for tan, cot,sec, csc are easily derived from the identities for sin and cos.
+                    Double Angle: sin 2θ = 2 sin θ cos θ cos 2θ = cos2
+                    θ − sin2
+                    θ Negative Angles: sin cos −θ =
+                    sin cos θ cos sin −θ = cos − sin θ = cos sin θ Pythagorean Identities: sin2
+                    θ + cos2
+                    θ = 1 cot2
+                    θ + 1 =
+                    csc2
+                    θ tan2
+                    θ + 1 = sec2
+                    θ Addition/Subtraction Identities: sin a ± B = sin a cos B ± sin B cos a
+                    cos a ± B = cos a cos B ± sin a sin B Half Angle Identities: sin θ
+                    2 = ±
+                    q
+                    1−cosθ
+                    2
+                    cos θ
+                    2 = ±
+                    q
+                    1+cosθ</div>
+            </div>
+
+            <div class="1.25-section">
+                <h4 class="1.25-head">Triangle Inequality</h4>
+                <div class="1.25">The Triangle Inequality says that in nondegenerate 4ABC: AB + BC > AC, BC + AC > AB,
+                    AC + AB > BC</div>
+            </div>
+
+            <div class="1.26-section">
+                <h4 class="1.26-head">Pick’s Theorem</h4>
+                <div class="1.26">A = I +
+                    1
+                    2B − 1 Where A is the area, I is the number of lattice points in the interior, and B is the
+                    number of lattice points on the boundary of a figure in the coordinate plane.</div>
+            </div>
+
+            <div class="1.27-section">
+                <h4 class="1.27-head"> Stewart’s Theorem</h4>
+                <img src="img/1.27.png" alt="image">
+                <div class="1.27">Take 4ABC with sides of length a, b, c opposite vertices A, B, C respectively. If cevian AD is
+                    drawn so that BD = m, DC = n, AD = d we have that man + dad = bmb + cnc, which can
+                    be remembered using the mnemonic device, “A man and his dad put a bomb in the sink.” This
+                    theorem isn’t used very often in competition math, but it can trivialize otherwise difficult problems
+                    when it does come up</div>
+            </div>
+
+            <div class="1.28-section">
+                <h4 class="1.28-head">(Extended) Law of Sines</h4>
+                <div class="1.28">sin A =
+                    b
+                    sin B =
+                    c
+                    sin C = 2R Where a, b, c are sides of a triangle, each opposite its respective angle
+                    A, B, C. R is the circumradius.</div>
+            </div>
+
+            <div class="1.29-section">
+                <h4 class="1.29-head">Law of Cosines</h4>
+                <div class="1.29">For a triangle with sides a, b, c and opposite angles A, B, C respectively, the Law of Cosines states
+                    c
+                    2 = a
+                    2 + b
+                    2 − 2ab cos C</div>
+            </div>
+
+            <div class="1.30-section">
+                <h4 class="1.3-head">Shoelace Theorem</h4>
+                <div class="1.30">Shoelace Theorem Suppose the polygon has vertices (a1, b1),(a2, b2), ...,(an, bn) listed in clockwise
+                    order. Then the area of P is 1
+                    2
+                    |(a1b2 + a2b3 + ... + anb1) − (b1a2 + b2a3 + ... + bna1)| The Shoelace
+                    Theorem gets its name because if one lists the coordinates in a column and marks the pairs of
+                    coordinates to be multiplied, the resulting image looks like laced-up shoes.
+                    (a1, b1)
+                    (a2, b2)
+                    ...
+                    (an, bn)
+                    (a1, b1)</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Number Theory -->
+    <section class="number-theory">
+        <div class="number-theory-head">
+            <h1 class="number-theory-header">Number Theory</h1>
+            <button class="number-theoryButton" type="button" onclick="expand('number-theory')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="number-theory-sections" style="display: none">
+            <div class="2.1">
+                <h4 class="2.1-head">Sum of an Arithmetic Series</h4>
+                <div class="2.1">Sn =
+                    n
+                    2
+                    (a1 + an) Where n is the number of terms, Sn is the sum, and a1 is the first term.</div>
+            </div>
+            <div class="2.2">
+                <h4 class="2.2-head">Sum of the first n terms of a Geometric Series</h4>
+                <div class="2.2">S =
+                    a1(1−r
+                    n)
+                    1−r Where S is the sum, a1 is the first term, and r is the common ratio.
+                    </div>
+            </div>
+            <div class="2.3">
+                <h4 class="2.3-head">Sum of an Infinite Geometric Series</h4>
+                <div class="2.3">S =
+                    a1
+                    1−r Where r is the common ratio, S is the sum, and a1 is the first term. Note that |r| < 1
+                    for this formula to work (otherwise the sum doesn’t converge).</div>
+            </div>
+            <div class="2.4">
+                <h4 class="2.4-head">Sum of an Arithmetic Series</h4>
+                <div class="2.4">The sum of the first odd numbers is simply n
+                    2
+                    . The sum of the first n numbers n(n+1)
+                    2
+                    . The sum
+                    of the first n even numbers is n(n + 1).</div>
+            </div>
+            <div class="2.5">
+                <h4 class="2.5-head">Sum of the First n Integers/Odd Integers</h4>
+                <div class="2.5">The sum of the first n odd numbers is simply n
+                    2
+                    . The sum of the first n positive integers is given
+                    by n(n+1)
+                    2
+                    .</div>
+            </div>
+            <div class="2.6">
+                <h4 class="2.6-head">Number/Sum of Divisors</h4>
+                <div class="2.6">Let p
+                    x
+                    1 p
+                    y
+                    2
+                    ...pn
+                    m be the prime factorization of sum number a. The number of divisors a has is given
+                    by (x + 1)(y + 1)...(n + 1). Similarly, the sum of the divisors of a is given by (p
+                    0
+                    1 + p
+                    1
+                    1
+                    ...px
+                    1
+                    )(p
+                    0
+                    2 +
+                    p
+                    1
+                    2
+                    ...p
+                    y
+                    2
+                    )...(p
+                    0
+                    m + p
+                    1
+                    m...pn
+                    m).</div>
+            </div>
+            <div class="2.7">
+                <h4 class="2.7-head">Chinese Remainder Theorem</h4>
+                <div class="2.7">The Chinese Remainder Theorem (or CRT) allows you to solve a system of linear congruences. Let
+                    m1, m2, ..., mr be a collection of pairwise relatively prime integers. Then the system of simultaneous congruences x ≡ a1( mod m1), x ≡ a2( mod m2), ..., x ≡ ar( mod mr) has a unique solution
+                    modulo M = m1m2, ∆∆∆mr, for any given integers a1, a2, ..., ar.</div>
+            </div>
+            <div class="2.8">
+                <h4 class="2.8-head">Chicken McNugget Theorem</h4>
+                <div class="2.8">The Chicken McNugget Theorem states that for any two relatively prime positive integers, m, n,
+                    the greatest integer that cannot be written in the form am + bn (the greatest number that can
+                    not be expressed as a sum of the two numbers) where a, b are positive integers is mn − m − n. It
+                    follows that there are (m−1)(n−1)
+                    2
+                    positive integers which cannot be expressed as the sum of some
+                    number of s and s.</div>
+            </div>
+            <div class="2.9">
+                <h4 class="2.9-head">Euler’s Totient/Phi Function</h4>
+                <div class="2.9">φ(n) = n(1 −
+                    1
+                    p1
+                    )(1 −
+                    1
+                    p2
+                    )...(1 −
+                    1
+                    pn
+                    ) Where n is any positive integer and pn are prime divisors of n.
+                    This gives the number of relatively prime positive integers less than or equal to some number n.
+                    </div>
+            </div>
+            <div class="2.10">
+                <h4 class="2.10-head">Wilson’s Theorem</h4>
+                <div class="2.10">Wilson’s Theorem is rather uncommon, but it is very powerful when you use it since it’s a bijection.
+                    Also, note that Wilson’s Theorem provides a primality test. However, there is no quick way to
+                    compute p!. It states that for any prime p, (p − 1)! ≡ −1 mod p
+                    </div>
+            </div>
+            <div class="2.11">
+                <h4 class="2.11-head">Trivial Inequality</h4>
+                <div class="2.11">Yes, this is a real thing. It states that x
+                    2 ≥ 0 for all real x (now you know why it is called “trivial”).
+                    You don’t really need this for anything, but many other well known theorems and inequalities are
+                    based on this.</div>
+            </div>
+            <div class="2.12">
+                <h4 class="2.12-head">Fibonacci Numbers</h4>
+                <div class="2.12">Define a sequence Fn such that F0 = 1, F1 = 1, Fn = Fn−1 + Fn−2. The first few terms look like
+                    0, 1, 1, 2, 3, 5, 8, . . . The quotient of two consecutive terms approaches the golden ratio: 1+√
+                    5
+                    </div>
+            </div>
+            <div class="2.13">
+                <h4 class="2.13-head">Pigeonhole Principle</h4>
+                <div class="2.13">If we distribute n balls into k boxes such that n > k then at least one box must have multiple
+                    balls.
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Algebra -->
+    <section class="algebra">
+        <div class="algebra-head">
+            <h1 class="algebra-header">Algebra</h1>
+            <button class="algebraButton" type="button" onclick="expand('algebra')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="algebra-sections" style="display: none">
+            <div class="3.1">
+                <h4 class="3.1-head">Logarithm Rules</h4>
+                <div class="3.1">Logarithmic to Exponential: loga
+                    b = x ⇒ a
+                    x = b
+                    Addition: loga
+                    b + loga
+                    c = loga
+                    bc
+                    Subtraction: loga
+                    b − loga
+                    c = loga
+                    b
+                    c
+                    Exponent Reducing: loga
+                    b
+                    n = n loga
+                    b
+                    Change of Base: loga
+                    b =
+                    logc
+                    b
+                    logc a
+                    Reciprocals: loga
+                    b =
+                    1
+                    logb a</div>
+            </div>
+            <div class="3.2">
+                <h4 class="3.2-head">Vieta’s Formulas</h4>
+                <div class="3.2">Vieta’s formulas relate the coefficients of a polynomial to its roots. This set of formulas is one
+                    of the most useful in competition math. These state that the sum of the roots for a quadratic
+                    polynomial ax2 + bx + c is −b
+                    a
+                    and that the product of the roots is c
+                    a
+                    . This extends to higher
+                    degree polynomials as well. For example, if the cubic polynomial ax3 +bx2 +cx+d has roots r, s, t,
+                    r + s + t =
+                    −b
+                    a
+                    , rst =
+                    −d
+                    a
+                    , and rs + rt + st =
+                    c
+                    a
+                    . Notice the signs alternate (with b being negative
+                    and alternating thereafter). This takes some practice to get used to and I recommend you visit
+                    the AoPS page on Vieta’s Formulas for further details.</div>
+            </div>
+            <div class="3.3">
+                <h4 class="3.3-head">Common Factorizations and SFFT</h4>
+                <div class="3.3">a
+                    2 − b
+                    2 = (a + b)(a − b)
+                    a
+                    3 − b
+                    3 = (a − b)(a
+                    2 + ab + b
+                    2
+                    )
+                    a
+                    3 + b
+                    3 = (a + b)(a
+                    2 − ab + b
+                    2
+                    )
+                    ab + a + b + 1 = (a + 1)(b + 1)
+                    ab − a − b + 1 = (a − 1)(b − 1)
+                    SFFT, or Simon’s Favorite Factoring, refers to the strategy of adding some number to both sides
+                    of a polynomial so that it will factor and then breaking the side that is an integer into its prime
+                    factors to find posible solutions.</div>
+            </div>
+            <div class="3.4">
+                <h4 class="3.4-head"> Quadratic Formula and Discriminant</h4>
+                <div class="3.4">a
+                    2 − b
+                    2 = (a + b)(a − b)
+                    a
+                    3 − b
+                    3 = (a − b)(a
+                    2 + ab + b
+                    2
+                    )
+                    a
+                    3 + b
+                    3 = (a + b)(a
+                    2 − ab + b
+                    2
+                    )
+                    ab + a + b + 1 = (a + 1)(b + 1)
+                    ab − a − b + 1 = (a − 1)(b − 1)
+                    SFFT, or Simon’s Favorite Factoring, refers to the strategy of adding some number to both sides
+                    of a polynomial so that it will factor and then breaking the side that is an integer into its prime
+                    factors to find posible solutions.</div>
+            </div>
+            <div class="3.5">
+                <h4 class="3.5-head">RMS-AM-GM-HM</h4>
+                <div class="3.5">q
+                    x
+                    2
+                    1+...+xn
+                    n
+                    n ≥
+                    x1+...xn
+                    n ≥
+                    √n x1...xn ≥
+                    n
+                    1
+                    x1
+                    +...+ 1
+                    xn
+                    This essentially states that the root-mean square is greater than or equal to the arithmetic mean
+                    is greater than or equal to the geometric mean is greater than or equal to the harmonic mean. The
+                    most important part of this inequality is AM-GM, which states that the arithmetic mean is greater
+                    than or equal to the geometric mean. Equality holds when all the s are the same. It is often used
+                    for maximization and minimization problems. Here is an interesting “proof” for this from AoPS
+                    Proofs Without Words gallery:
+                    </div>
+                <img src="img/3.5.png" alt="image">
+            </div>
+            <div class="3.6">
+                <h4 class="3.6-head">Location of Roots (DeMoivre’s Theorem)</h4>
+                <div class="3.6">Let cos(θ) + isin θ = cis(θ). DeMoivre’s Theorem allows complex numbers in polar form - that
+                    is r · cis(θ) - to be raised to raised to a power. It states that for a rational x and integral n,
+                    cis(x)
+                    n = cis(nx). This can be used to find the n
+                    th root of a number/polynomial.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counting and Probalility -->
+    <section class="CandP">
+        <div class="CandP-head">
+            <h1 class="CandP-header">Counting and Probalility</h1>
+            <button class="CandPButton" type="button" onclick="expand('CandP')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="CandP-sections" style="display: none">
+            <div class="4.1">
+                <h4 class="4.1-head">Permutations</h4>
+                <div class="4.1">nPk =
+                    n!
+                    (n−k)! Where n is the total number of objects from which you are choosing k objects (order
+                    does matter).</div>
+            </div>
+            <div class="4.2">
+                <h4 class="4.2-head">Combinations</h4>
+                <div class="4.2">n
+                    k
+                    
+                    =
+                    n!
+                    k!(n−k)! Where n is the total number of objects from which you are choosing k objects (order
+                    doesn’t matter).
+                    </div>
+            </div>
+            <div class="4.3">
+                <h4 class="4.3-head"> Pascals Identity</h4>
+                <div class="4.3">
+                    n
+                    k
+                    
+                    =
+                    n−1
+                    k−1
+                    
+                    +
+                    n−1
+                    k
+                    
+                    Where n is the total number of objects from which you are choosing k objects.
+                    Note that this can be easily observed from Pascal’s Triangle. This identity can be extended to
+                    sums of three or more binomial coefficients.</div>
+            </div>
+            <div class="4.4">
+                <h4 class="4.4-head">Binomial Theorem and Sum of Row in Pascal’s Triangle</h4>
+                <div class="4.4">e*
+                    The binomial theorem states that (a + b)
+                    n =
+                    Pn
+                    k=0
+                    n
+                    k
+                    
+                    a
+                    n−k
+                    b
+                    k
+                    . This is easier to understand by doing
+                    practice expansions. The coefficients of the powers of a and b are given in Pascals Triangle. The
+                    sum of the n
+                    th row in the triangle is 2
+                    n−1
+                    (as shown below).</div>
+                <img src="img/4.4.png" alt="image">
+            </div>
+            <div class="4.5">
+                <h4 class="4.5-head">Fundamental Theorem of Counting</h4>
+                <div class="4.5">ng*
+                    If one event has n possible outcomes and another event has m possible outcomes, the total number
+                    of events if both events occur is m × n. We can recursively prove this for multiple events.</div>
+            </div>
+            <div class="4.6">
+                <h4 class="4.6-head">Burnside’s Lemma</h4>
+                <div class="4.6">mma
+                    Burnside’s Lemma is a way to count objects if you need to account for rotations and reflections.
+                    It has appeared on Olympiads and even AMCs (it can be used for a variety of problems, though it
+                    may not always be the fastest method).</div>
+            </div>
+            <div class="4.7">
+                <h4 class="4.7-head">Stars and Bars</h4>
+                <div class="4.7">rs*
+                    The number of ways to distribute n indistinguishable items into k distinguishable boxes, where
+                    each box must receive at least one item, is n−1
+                    k−1
+                    
+                    Alternatively, the number of ways to distribute
+                    indistinguishable balls in distinguishable boxes, where some box(es) may remain empty, is n+k−1
+                    k−1</div>
+            </div>
+            <div class="4.8">
+                <h4 class="4.8-head">Expected Value</h4>
+                <div class="4.8">alue*
+                    If the expected value is E(X), E(X) = P
+                    i P(Xi)V (Xi),where P(Xi) is the probability of event Xi
+                    occurring, and V (Xi) is the value of outcome Xi
+                    . If X1, X2, ...Xk are several events (independent
+                    or not), then E(X1 + X2 + ... + Xk) = E(X1) + E(X2) + ... + E(Xk). Basically, you can sum
+                    expected values (weighted averages). For clarity, here is an example: You roll two dice. What
+                    is the expected sum? We can compute the expected value of a dice roll. Since all outcomes are
+                    equally likely, the weighted average for one roll of a dice is simply the average, or 3.5. Since we
+                    can sum expected values, the expected value of the sum is 3.5 + </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/formula.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A great way to practice for big math contests like
+    Amc 10 and Mathcounts in a fun and engaging way."/>
+    <title>Train Math</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\challenge.css">
+    <link rel="icon" href="img/simplified_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/simplified_logo-removebg-preview.png" 
+                alt="logo" class="logo-image">
+            </a>
+        </div>
+        <div class="main-menu">
+            <a href="challenge.html">Challenge</a>
+            <a href="speed.html">Speed</a>
+            <a href="resources/index.html">Resources</a>
+        </div>
+    </nav>
+
+    <!-- Stats -->
+    <section class="full-stats">
+        <button class="generate" type="button" onclick="question()"> 
+            GENERATE
+        </button>
+        <span class="stats">
+            <div class="rate">
+                Rate: N/A
+            </div>
+            <div class="curScore">
+                Score: 0
+            </div>
+            <div class="questions">
+                Questions: 0
+            </div>
+            <div class="streak">
+                Streak: 0
+            </div>
+        </span>
+    </section>
+    
+    <!-- Question-Box -->
+    <section class="question-box">
+        <div class="question"></div>
+        <div class="choices">
+            <div class="a-class">
+                <div class="bigA"></div>
+                <div class="a-choice"></div>
+            </div>
+            <div class="b-class">
+                <div class="bigB"></div>
+                <div class="b-choice"></div>
+            </div>
+            <div class="c-class">
+                <div class="bigC"></div>
+                <div class="c-choice"></div>
+            </div>
+            <div class="d-class">
+                <div class="bigD"></div>
+                <div class="d-choice"></div>
+            </div>
+            <div class="e-class">
+                <div class="bigE"></div>
+                <div class="e-choice"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Answer -->
+    <section class="answer">
+        <button class="a" type="button" onclick="answer('A')">
+            A
+        </button>
+        <button class="b" type="button" onclick="answer('B')">
+            B
+        </button>
+        <button class="c" type="button" onclick="answer('C')">
+            C
+        </button>
+        <button class="d" type="button" onclick="answer('D')">
+            D
+        </button>
+        <button class="e" type="button" onclick="answer('E')">
+            E
+        </button>
+    </section>
+    <script src="js/challenge.js"></script>
+
+    <!-- Popup -->
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <h1 class="popup-text"></h1>
+            <button class="closePopup" type="button" onclick="closePopup()">
+                Close
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

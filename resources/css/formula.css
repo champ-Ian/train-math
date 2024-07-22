@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--light-color);
+}
+
+:root {
+    --primary-color:#5888A6;
+    --dark-color: #32628C;
+    --black-color: #00001a;
+    --light-color: #ADC8D9;
+    --white-color: #EBF0F2;   
+    --gray-color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px 15px 20px;
+}
+
+.logo-image {
+    width: 30%;
+}
+
+.main-menu {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 550px;
+} 
+
+.main-menu a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.main-menu a:hover {
+    transition-duration: 0.3s;
+    color: var(--primary-color)
+}
+
+/* Resources-Navbar */
+.resource-navbar {
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 20px 20px;
+    overflow: hidden;
+}
+
+.resource-navbar a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.resource-navbar a:hover {
+    transition-duration: 0.8s;
+    color: var(--primary-color);
+}
+
+/* Geometry */
+.geometry {
+    background: white;
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.geometryButton {
+    background: white;
+    border: none;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.geometryButton:hover {
+    cursor: pointer;
+}
+
+.geometry-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geometry img {
+    width: 100%
+}
+
+.geometry-sections div h4 {
+    font-size: 1rem;
+}
+
+.geometry-sections div div {
+    font-size: 0.8rem;
+}
+
+.geometry-sections div {
+    padding: 10px;
+}
+
+
+/* Number Theory */
+.number-theory {
+    background: white;
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.number-theoryButton {
+    background: white;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.number-theoryButton:hover {
+    cursor: pointer;
+}
+
+.number-theory-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-theory img {
+    width: 100%
+}
+
+.number-theory-sections div h4 {
+    font-size: 1rem;
+}
+
+.number-theory-sections div div {
+    font-size: 0.8rem;
+}
+
+.number-theory-sections div {
+    padding: 10px;
+}
+
+
+/* Algebra */
+.algebra {
+    background: white;
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.algebraButton {
+    background: white;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.algebraButton:hover {
+    cursor: pointer;
+}
+
+.algebra-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.algebra img {
+    width: 100%
+}
+
+.algebra-sections div h4 {
+    font-size: 1rem;
+}
+
+.algebra-sections div div {
+    font-size: 0.8rem;
+}
+
+.algebra-sections div {
+    padding: 10px;
+}
+
+/* Counting and Probalility */
+.CandP {
+    background: white;
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.CandPButton {
+    background: white;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.CandPButton:hover {
+    cursor: pointer;
+}
+
+.CandP-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CandP img {
+    width: 100%
+}
+
+.CandP-sections div h4 {
+    font-size: 1rem;
+}
+
+.CandP-sections div div {
+    font-size: 0.8rem;
+}
+
+.CandP-sections div {
+    padding: 10px;
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+    .main-menu{
+        width: 50%;
+    }
+    .CandP img, .algebra img, .number-theory img, .geometry img  {
+        width: 80%;
+    }
+    .resource-navbar a {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .CandP img, .algebra img, .number-theory img, .geometry img  {
+        width: 60%;
+    }
+    .CandP, .algebra, .number-theory, .geometry {
+        width: 70%
+    }
+    .resource-navbar a {
+        font-size: 1.2rem;
+    }
+    .main-menu a {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .main-menu{
+        width: 30%;
+    }
+    .CandP, .algebra, .number-theory, .geometry {
+        width: 70%;
+    }
+    .CandP img, .algebra img, .number-theory img, .geometry img  {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .CandP img, .algebra img, .number-theory img, .geometry img  {
+        width: 40%;
+    }
+}
