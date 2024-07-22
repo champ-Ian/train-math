@@ -85,16 +85,14 @@ body {
 .overview {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    align-items: center;
+    margin: 20px 30px 10px;
 }
 
 .formula-overview, .glossary-overview, .calculator-overview, .quizzes-overview{
-    width: 80%;
     background-color: var(--white-color);
     border-radius: 20px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto 20px;
 }
 
 .formula-overview-heading, .glossary-overview-heading, .calculator-overview-heading, .quizzes-overview-heading{
@@ -104,24 +102,6 @@ body {
 
 .formula-overview-text, .glossary-overview-text, .calculator-overview-text, .quizzes-overview-text{
     font-size: 1rem;
-}
-
-.formula-overview-button, .glossary-overview-button, .calculator-overview-button, .quizzes-overview-button{
-    background: var(--dark-color);
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px 70px;
-    font-size: 1rem;
-    font-weight: bold;
-    display: block;
-    margin: 20px auto 0px;
-    text-decoration: none;
-    color: var(--black-color)
-}
-
-.formula-overview-button:hover, .glossary-overview-button:hover, .calculator-overview-button:hover, .quizzes-overview-button:hover{
-    transition-duration: 0.7s;
-    background: var(--primary-color);
 }
 
 /* Breakpoints */
@@ -147,10 +127,6 @@ body {
         margin-top: 40px;
         height: 300px;
     }
-    .formula-overview-button, .glossary-overview-button, .calculator-overview-button, .quizzes-overview-button {
-        font-size: 0.8rem;
-        bottom: 30px;
-    }
     .resource-navbar a {
         font-size: 1.2rem;
     }
@@ -166,11 +142,7 @@ body {
     }
     .formula-overview, .glossary-overview, .calculator-overview, .quizzes-overview {
         width: 20%;
-        height: 450px;
-    }
-    .formula-overview-button, .glossary-overview-button, .calculator-overview-button, .quizzes-overview-button {
-        font-size: 1rem;
-        padding: 20px;
+        height: 350px;
     }
 
 }
