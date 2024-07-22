@@ -160,6 +160,8 @@ body {
     .quizzes{
         flex-direction: row;
         flex-wrap: wrap;
+        width: 80%;
+        margin: 20px auto 20px;
     }
     .card{
         width: 40%
@@ -169,5 +171,7 @@ body {
 
 
 @media only screen and (min-width: 1200px) {
-    
+    .quizzes{
+        width: 60%;
+    }  
 }
