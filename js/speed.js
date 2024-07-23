@@ -334,7 +334,18 @@ function typing(){
 
 function clear(){
     scoreElem = document.querySelector(".curScore");
-    turnOnPopup(scoreElem.innerHTML + '. ' + document.querySelector(".speed").innerHTML + ' (questions solved per minute)')
+    message = '';
+    if (score<20){
+        message='Keep practicing, you can do better.'
+    } else if (score<30){
+        message='Not bad, but still not the best.'
+    } else if (score<40){
+        message='Your pretty fast! Keep on trucking to the next level.'
+    } else{
+        message='Unbelievable, are you even human?'
+    }
+
+    turnOnPopup(scoreElem.innerHTML + '. ' + document.querySelector(".speed").innerHTML + ' (questions solved per minute). <br>' + message)
     sessionStart = false;
     questionAnswer= null;
     document.querySelector(".start").innerHTML = "Start";
@@ -350,13 +361,14 @@ function clear(){
     secondValue.innerHTML = "";
     scoreElem.innerHTML = "Score: 0";
     score=0;
-    document.querySelector(".clock").innerHTML = "Time: 01:30"
+    document.querySelector(".clock").innerHTML = "Time: 00:30"
     document.querySelector(".speed").innerHTML = "Speed: N/A"
 }
 
 function start(){
     if (sessionStart == true){
         turnOnPopup("Can't start a new game while one is in progress.")
+        return
     }
 
     setup()
@@ -380,7 +392,7 @@ function setup(){
 }
 
 function startTimer(){
-    var sec = 90;
+    var sec = 30;
     timer = setInterval(()=>{
         speedElem = document.querySelector('.speed');
         speedRate = Math.round(score*(60/(90-sec)));
