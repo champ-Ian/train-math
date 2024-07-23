@@ -196,7 +196,7 @@ body {
     .overview{
         flex-direction: row;
         width: 90%;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .first-overview{
         margin: 20px;
@@ -266,7 +266,7 @@ body {
     .overview{
         flex-direction: row;
         width: 80%;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .first-overview{
         margin: 50px;
