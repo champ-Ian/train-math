@@ -67,14 +67,14 @@ body {
 
 .first-overview {
     border-radius: 40px;
-    margin: 40px 40px 10px 40px;
+    margin: 30px 40px 40px 40px;
     padding: 30px;
     background-color: var(--light-color);
 }
 
 .second-overview {
     border-radius: 40px;
-    margin: 30px 40px 40px 40px;
+    margin: 0px 40px 40px 40px;
     padding: 30px;
     background-color: var(--light-color);
 }
@@ -93,7 +93,7 @@ body {
     border-radius: 10px;
     background-color: var(--white-color);
     padding: 10px 70px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     display: block;
     margin: 20px auto 0px;
@@ -120,7 +120,7 @@ body {
     border-radius: 10px;
     background-color: var(--white-color);
     padding: 10px 70px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     display: block;
     margin: 20px auto 0px;
@@ -133,6 +133,47 @@ body {
     background-color: var(--primary-color)
 }
 
+/* Fun */
+.fun{
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    display: flex;
+    margin: 0px auto 0px;
+    align-items: center;
+}
+
+.heading-first{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.heading-fun{
+    color: red;
+    padding-left: 5px;
+    font-size: 2rem;
+}
+
+.fun-text{
+    padding: 10px 20px 10px;
+}
+
+.math-image{
+    border-radius: 20px;
+    width: 200px;
+    margin: 10px auto 10px;
+}
+
 /* Breakpoints */
 @media only screen and (min-width: 600px) {
     .overview{
@@ -142,6 +183,11 @@ body {
 
     .main-menu{
         width: 50%;
+    }
+    .fun{
+        flex-direction: row;
+        padding-left: 30px;
+        padding-right: 40px;
     }
 }
 
@@ -167,6 +213,18 @@ body {
     .main-menu a {
         font-size: 1.3rem;
     }
+    .fun-text{
+        font-size: 1.3rem;
+    }
+    .heading-first{
+        font-size: 2rem;
+    }
+    .heading-fun{
+        font-size: 3rem;
+    }
+    .math-image{
+        width: 280px;
+    }
 }
 
 
@@ -174,7 +232,7 @@ body {
     .overview{
         flex-direction: row;
         width: 80%;
-        margin-top: 60px;
+        margin-top: 30px;
     }
     .first-overview{
         margin: 30px;
@@ -185,6 +243,21 @@ body {
 
     .main-menu{
         width: 30%;
+    }
+    .first-overview-button, .second-overview-button {
+        font-size: 1.2rem;
+    }
+    .math-image{
+        padding:0px;
+        margin: 0px;
+    }
+    .left{
+        width: 400px;
+    }
+    .fun{
+        padding-right: 0px;
+        margin: 0px;
+        justify-content: center;
     }
 }
 
@@ -202,3 +275,4 @@ body {
         margin: 50px;
     }
 }
+
